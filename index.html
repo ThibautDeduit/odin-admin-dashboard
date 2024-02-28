@@ -5,9 +5,170 @@
 		<meta name="viewport" content="width=device-width">
 		<title>Admin Dashboard</title>
 		<link rel="stylesheet" href="style.css">
-		<script src="script.js" defer></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<h1>Dashboard</h1>
+
+		<div class="top-container">
+			<nav>
+				<h1><img class="icon" id="dashboard" src="./pics/dashboard.svg" alt="Dashboard">Dashboard</h1>
+				<ul class="primary">
+					<li><a href=""><img class="icon" src="./pics/home.svg" alt="Home">Home</a></li>
+					<li><a href=""><img class="icon" src="./pics/profile.svg" alt="Profile">Profile</a></li>
+					<li><a href=""><img class="icon" src="./pics/messages.svg" alt="Messages">Messages</a></li>
+					<li><a href=""><img class="icon" src="./pics/history.svg" alt="History">History</a></li>
+					<li><a href=""><img class="icon" src="./pics/tasks.svg" alt="Tasks">Tasks</a></li>
+					<li><a href=""><img class="icon" src="./pics/communities.svg" alt="Communities">Communities</a></li>
+				</ul>
+				<ul class="secondary">
+					<li><a href=""><img class="icon" src="./pics/settings.svg" alt="">Settings</a></li>
+					<li><a href=""><img class="icon" src="./pics/support.svg" alt="">Support</a></li>
+					<li><a href=""><img class="icon" src="./pics/privacy.svg" alt="">Privacy</a></li>
+				</ul>
+			</nav>
+
+			<header>
+				<div class="first-row">
+					<div class="left">
+						<img class="icon" src="./pics/search.svg" alt="Search">
+						<input type="text" id="search" name="search" value="">
+					</div>
+					<div class="right">
+						<img class="icon" src="./pics/bell.svg" alt="Bell">
+						<img class="avatar" src="./pics/avatar.png" alt="Avatar">
+						<p>Bobandy</p>
+					</div>
+				</div>
+				<div class="second-row">
+					<div class="left">
+						<img class="avatar" src="./pics/avatar.png" alt="Avatar">
+						<p>Hi there,<br><span class="username">Bobandy (@bobandy)</span></p>
+					</div>
+					<div class="right">
+						<button>New</button>
+						<button>Upload</button>
+						<button>Share</button>
+					</div>
+				</div>
+			</header>
+
+			<main>
+				<section class="projects">
+					<h2>Your Projects</h2>
+					<div class="projects-container">
+						<div class="project">
+							<h3>Some Cool Project</h3>
+							<p>This is a cool project. Everyone wants a piece of it. Get it quick, if you want to be cool. Very cool project.</p>
+							<div class="buttons">
+								<img class="icon" src="./pics/favorite.svg" alt="Favorite">
+								<img class="icon" src="./pics/view.svg" alt="View">
+								<img class="icon" src="./pics/share.svg" alt="Share">
+							</div>
+						</div>
+						<div class="project">
+							<h3>Some Cool Project</h3>
+							<p>This is a cool project. Everyone wants a piece of it. Get it quick, if you want to be cool. Very cool project.</p>
+							<div class="buttons">
+								<img class="icon" src="./pics/favorite.svg" alt="Favorite">
+								<img class="icon" src="./pics/view.svg" alt="View">
+								<img class="icon" src="./pics/share.svg" alt="Share">
+							</div>
+						</div>
+						<div class="project">
+							<h3>Some Cool Project</h3>
+							<p>This is a cool project. Everyone wants a piece of it. Get it quick, if you want to be cool. Very cool project.</p>
+							<div class="buttons">
+								<img class="icon" src="./pics/favorite.svg" alt="Favorite">
+								<img class="icon" src="./pics/view.svg" alt="View">
+								<img class="icon" src="./pics/share.svg" alt="Share">
+							</div>
+						</div>
+						<div class="project">
+							<h3>Some Cool Project</h3>
+							<p>This is a cool project. Everyone wants a piece of it. Get it quick, if you want to be cool. Very cool project.</p>
+							<div class="buttons">
+								<img class="icon" src="./pics/favorite.svg" alt="Favorite">
+								<img class="icon" src="./pics/view.svg" alt="View">
+								<img class="icon" src="./pics/share.svg" alt="Share">
+							</div>
+						</div>
+						<div class="project">
+							<h3>Some Cool Project</h3>
+							<p>This is a cool project. Everyone wants a piece of it. Get it quick, if you want to be cool. Very cool project.</p>
+							<div class="buttons">
+								<img class="icon" src="./pics/favorite.svg" alt="Favorite">
+								<img class="icon" src="./pics/view.svg" alt="View">
+								<img class="icon" src="./pics/share.svg" alt="Share">
+							</div>
+						</div>
+						<div class="project">
+							<h3>Some Cool Project</h3>
+							<p>This is a cool project. Everyone wants a piece of it. Get it quick, if you want to be cool. Very cool project.</p>
+							<div class="buttons">
+								<img class="icon" src="./pics/favorite.svg" alt="Favorite">
+								<img class="icon" src="./pics/view.svg" alt="View">
+								<img class="icon" src="./pics/share.svg" alt="Share">
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<aside>
+					<section class="announcements">
+						<h2>Announcements</h2>
+						<div class="announcements-container">
+							<div class="announcement">
+								<h3>Site Maintenance</h3>
+								<p>Maintenance is scheduled from 8am to 12am on February 23rd.</p>
+							</div>
+							<div class="announcement">
+								<h3>Community Share Day</h3>
+								<p>We are not sure what this is about, please ask Paul for more information.</p>
+							</div>
+							<div class="announcement">
+								<h3>Update Privacy Policy</h3>
+								<p>We already have dirt on you anyway.</p>
+							</div>
+						</div>
+					</section>
+					<section class="trends">
+						<h2>Trends</h2>
+						<div class="trends-container">
+							<div class="trend">
+								<img class="avatar" src="./pics/avatar.png" alt="Avatar">
+								<div class="trend-text">
+									<h3>@bobandy</h3>
+									<p>Some Cool Project</p>
+								</div>
+							</div>
+							<div class="trend">
+								<img class="avatar" src="./pics/avatar.png" alt="Avatar">
+								<div class="trend-text">
+									<h3>@bobandy</h3>
+									<p>Some Cool Project</p>
+								</div>
+							</div>
+							<div class="trend">
+								<img class="avatar" src="./pics/avatar.png" alt="Avatar">
+								<div class="trend-text">
+									<h3>@bobandy</h3>
+									<p>Some Cool Project</p>
+								</div>
+							</div>
+							<div class="trend">
+								<img class="avatar" src="./pics/avatar.png" alt="Avatar">
+								<div class="trend-text">
+									<h3>@bobandy</h3>
+									<p>Some Cool Project</p>
+								</div>
+							</div>
+						</div>
+					</section>
+				</aside>
+			</main>
+		
+		</div>
 	</body>
 </html>
